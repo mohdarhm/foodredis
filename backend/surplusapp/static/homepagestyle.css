@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h1, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.container {  
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 5px black;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.main-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: ease 0.1s;
+}
+
+
+.main-button:hover{
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+.card-container {
+  display: none;
+  margin-top: 20px;
+}
+
+/* ... (existing styles) */
+
+.card-container .card a {
+  text-decoration: none;
+  color: #3498db; /* Set the desired link color */
+  transition: color 0.3s; /* Add smooth color transition */
+  border: 2px solid black;
+  
+}
+
+.card-container .card a:link {
+  color: #e74c3c; /* Change link color on hover */
+  
+}
+
+/* ... (rest of the styles) */
+
+
+.card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0.6; /* Initially hidden */
+  transform: translateY(20px);
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s; /* Combined transitions */
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 1; /* Show on hover */
+  color:rgb(42, 42, 42);
+}
+
+.card-container:hover .card {
+  transform: translateY(0); /* Adjusted position transition */
+  
+}
+
+.card:link{
+  text-decoration:none;
+  color:rgb(0, 0, 0);
+  
+}
+

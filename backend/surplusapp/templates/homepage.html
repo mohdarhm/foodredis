@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homepagestyle.css' %}">
+
+    <title>Gobbl Home</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">GOBBL</h1>
+        <button class="main-button" id="revealButton">Go</button>
+        <div class="card-container" id="cardContainer">
+          <a href="{% url 'DLOG' %}" class="card">
+            <h2>I'm a Distributor</h2>
+            <p>Distributors take responsibility to make sure the food reaches the needy.</p>
+          </a>
+        <a href="{% url 'SLOG'%}" class="card">
+            <h2>I'm a Source</h2>
+            <p>Source have excess food that they can donate.</p>
+        </a>
+        <a href="#" class="card" id="regbutton">
+            <h2>I want to register</h2>
+            <p>Ready to make a change? Register now! its free.</p>
+        </a>
+        <div class="card-container" id="cardContainer2">
+            <a href="{% url 'REGISOURCE' %}" class="card">
+              <h2>REGISTER AS A SOURCE</h2>
+            </a>
+          <a href="{% url 'REGIDISTRIBUTOR'%}" class="card">
+              <h2>REGISTER AS A DISTRIBUTOR</h2>
+          </a>
+        </div>
+    </div>
+    <script src="{% static 'homepagescript.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* static/css/signup.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+background-color: white;    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 2s ease;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black; /* Add black border */
+    border-radius: 10px; /* Rounded borders */
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add color transition */
+}
+
+button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+/* Update the CSS */
+.styled-input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.styled-input {
+    /* Existing styles */
+    margin: 8px 0;
+    padding: 10px;
+}
+
+/* Apply specific styles to the last two inputs */
+.styled-input:last-of-type {
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error {
+    font-weight: bold;
+}
+
+
+.noerror {
+    font-weight: bold;
+}
+
+.noerror-message {
+    color: rgb(107, 102, 255);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-border {
+    border: 2px solid red;
+}
