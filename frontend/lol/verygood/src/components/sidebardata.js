@@ -15,26 +15,26 @@ export const sidebardata = [
     {
         title:"Home",
         icon:<HomeMaxIcon />,
-        link:"/home"
+        link:""
     },
     {
         title:"Show listings",
         icon:<ListIcon />,
-        link:"/cum"
+        link:"/showlistings"
     },
     {
         title:"Create a listing",
         icon:<NotListedLocationIcon />,
-        link:"/wow"
+        link:"/createlistings"
     },
     {
         title:"Current Requests",
         icon:<InsertEmoticonIcon />,
-        link:"/uhoh"
+        link:"/currentrequests"
     },
     {
         title:"Logout",
         icon:<PermIdentityIcon />,
-        link:"/gaming"
+        link:"/logout"
     }
 ]

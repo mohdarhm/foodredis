@@ -24,7 +24,7 @@ urlpatterns = [
     # path('dislogin',views.dislogin),
     # path('soulogin',views.soulogin),
     path('souhome',views.souhome,name="SOUHOME"),
-    path('loginauth',views.login, name="DISHOME"),
+    path('loginauth',views.usrlogin, name="DISHOME"),
     path('slogin',views.sourceloginpage, name="SLOG"),
     path('dlogin',views.disloginpage, name="DLOG"),
     path('regis',views.regisource,name="REGISOURCE"),
@@ -34,5 +34,9 @@ urlpatterns = [
     path('debug',views.debugall),
     path('regsignup', views.reg_signup_view, name="regsignup"),
     path('check_username/', views.chkusername, name='check_username'),
-    path('registersource', views.source_signup_view2)
+    path('registersource', views.source_signup_view2),
+    path('accounts/login/check-auth',views.check_auth),
+    path('check-auth',views.check_auth),
+    path('api/add_listing/', views.add_listing, name='add_listing'),
+    path('api/get_card_data/', views.get_card_data, name='get_card_data'),
 ]
