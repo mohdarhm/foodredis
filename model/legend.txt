@@ -1,0 +1,5 @@
+the legend for the score calculation is:
+
+--  ratings: (1-5)*(times 10) which means a rating of 2 is 20 points
+-- distance: scale where scale is 10 (if distance < 5, 20 if between 5 and 10 and 30 if >10)
+-- quantity: value*10.
